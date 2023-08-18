@@ -11,10 +11,12 @@ import org.springframework.context.annotation.Configuration;
 @MapperScan("com.example.springboot.mapper")
 public class MybatisPlusConfig {
 
+    // 最新版
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
         return interceptor;
     }
+
 }

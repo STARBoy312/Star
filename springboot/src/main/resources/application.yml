@@ -3,14 +3,19 @@ server:
 
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/xing?serverTimezone=GMT%2b8
-    username: root
-    password: 123456
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/qing?serverTimezone=GMT%2b8
+   username: root
+   password: 707304
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #????mybatis?xml??
-  #configuration:
-   # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # configuration:
+    # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+files:
+  upload:
+    path: D:/vue项目/files/

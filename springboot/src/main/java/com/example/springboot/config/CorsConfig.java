@@ -12,6 +12,11 @@ public class CorsConfig {
     // 当前跨域请求最大有效时长。这里默认1天
     private static final long MAX_AGE = 24 * 60 * 60;
 
+    /**
+     * 配置全局跨域过滤器
+     *
+     * @return CorsFilter对象
+     */
     @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -24,4 +29,3 @@ public class CorsConfig {
         return new CorsFilter(source);
     }
 }
-
